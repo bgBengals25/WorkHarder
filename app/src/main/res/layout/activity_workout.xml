@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_name"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:id="@+id/exerciseName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:paddingTop="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:text="@string/timer_text"
+            android:gravity="center"
+            android:textSize="100dp"
+            android:textColor="@color/black"
+            android:id="@+id/timerText"/>
+
+        <TextView
+            android:id="@+id/setsLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sets left: "
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Start Timer"
+            android:textSize="20dp"
+            android:id="@+id/startButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Reset"
+            android:textSize="20dp"
+            android:id="@+id/resetButton"
+            android:onClick="resetTimer"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Exit"
+            android:textSize="20dp"
+            android:id="@+id/exitButton"
+            android:onClick="resetTimer"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
